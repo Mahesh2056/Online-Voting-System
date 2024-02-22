@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online voting system - Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Online Voting System</h1>
+    <div id="headerSection">
+        <h1>Online Voting System</h1>
+    </div>
     <hr>
-    <h3>Registration</h3>
+    <div id="bodySection">
+    <h2>Registration</h2>
     <!--Form start-->
     <form action="#">
         <input type="text" name="name" placeholder="Enter Name">
@@ -17,20 +21,27 @@
         <input type="password" name="password" placeholder="Enter Password">
         <input type="password" name="cpassword" placeholder="Enter Confirm Password">
         <br><br>
-        <input type="text" name="address" placeholder="Enter Address">
+        <input id="address" type="text" name="address" placeholder="Enter Address">
         <br><br>
-        <!--Image-->
-        Upload Image: <input type="file" name="photo">
-        <br><br>
-        Select Role: <select name="role">
-            <option value="1">Voter</option>
-            <option value="2">Group</option>
-        </select>
-        <br><br>
-        <button>Register</button>
-        <br><br>
+        <center>
+            <div id="imagepart">
+                <!--Image-->
+                Upload Image:<input type="file" name="photo">
+            </div>
+            <br>
+            <div id="role">
+                Select Your Role: <select name="role">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+            </div>
+        </center>
+        <br>
+        <button id="registerbtn">Register</button>
+        <br>
         Already User? <a href="../index.html">Login Here</a>
     </form>
     <!--Form End-->
+</div>
 </body>
 </html>
