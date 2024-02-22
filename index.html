@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online voting system</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <center>
-    <h1>Online Voting System</h1>
-    <!--horizontal line -->
-    <hr> 
+    <div id="headerSection">
+        <h1>Online Voting System</h1>
+    </div> 
+     <!--horizontal line -->
+     <hr>
     <!--Form Start-->
-    <form action="#">
-        <h3>Login</h3>
-        <input type="number" name="mobile" placeholder="Enter Mobile">
-        <br><br>
-        <input type="password" name="password" placeholder="Enter Password">
-        <br><br>
-        <select name="role">
-            <option value="1">Voter</option>
-            <option value="2">Group</option>
-        </select>
-        <br><br>
-        <button>Login</button>
-        <br><br>
-        New User? <a href="#">Register Here</a>
-    </form>
-    <!--Form End-->
-</center>
+    <div id="bodySection">
+        <form action="#">
+            <h2>Login</h2>
+            <input type="number" name="mobile" placeholder="Enter Mobile">
+            <br><br>
+            <input type="password" name="password" placeholder="Enter Password">
+            <br><br>
+            <select id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+            <br><br>
+            <button id="loginbtn">Login</button>
+            <br><br>
+            New User? <a href="routes/register.html">Register Here</a>
+        </form>
+        <!--Form End-->
+    </div>
 </body>
 </html>
