@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     background-color: #95a5a6;
 }
 
@@ -61,3 +60,25 @@ input{
     background-color: #3498db;
     color: white;
 }
+
+#backbtn{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+    float: left;
+    margin: 10px;
+}
+
+#logoutbtn{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+    float: right;
+    margin: 10px
+}
+
+
